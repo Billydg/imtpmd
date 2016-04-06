@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_vertical"
+    android:padding="16dp">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center_vertical"
+        android:id="@+id/chart" >
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nieuw resultaat"
+        android:id="@+id/plusTweeTest"
+        android:layout_marginRight="63dp"
+        android:layout_marginBottom="59dp"
+        android:layout_alignBottom="@+id/chart"
+        android:onClick="voortgang"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Naam:"
+        android:id="@+id/textnaam"
+        android:layout_alignTop="@+id/chart"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Studentnummer:"
+        android:id="@+id/textstudent"
+        android:layout_below="@+id/textnaam"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
